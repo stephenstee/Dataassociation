@@ -1,0 +1,11 @@
+<h1>
+	Show page
+</h1>
+<% if(currentUser && student.author.id.equals(currentUser._id)){ %>
+<h1>
+	<%= student.name %>
+</h1>
+<h2>
+	<%= student.dob %>
+</h2>
+<% } %>

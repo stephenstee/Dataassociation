@@ -1,0 +1,9 @@
+<h1>
+	Student Detials
+</h1>
+<% student.forEach(function(newstudent){ %>
+<%if(currentUser._id.equals(newstudent.author.id)) 	{ %>
+	<h1><%= newstudent.name %></h1>
+<a href="/student/<%= newstudent._id%>">Click</a>
+<%} %>
+<% }) %>
